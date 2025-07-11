@@ -1,0 +1,9 @@
+<odoo>
+  <data>
+    <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+      <xpath expr="//div[@class='page']" position="inside">
+        <img t-if="o.x_qr_invoice" t-att-src="'data:image/png;base64,' + o.x_qr_invoice"/>
+      </xpath>
+    </template>
+  </data>
+</odoo>

@@ -1,0 +1,14 @@
+<odoo>
+  <data>
+    <record id="view_pos_clients_tree_inherit" model="ir.ui.view">
+      <field name="name">pos.client.tree.inherit</field>
+      <field name="model">res.partner</field>
+      <field name="inherit_id" ref="point_of_sale.view_pos_client_tree"/>
+      <field name="arch" type="xml">
+        <xpath expr="//field[@name='email']" position="before">
+          <field name="lang"/>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>
